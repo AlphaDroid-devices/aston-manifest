@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="alpha-devices"
+            fetch="https://github.com/alphadroid-devices"
+            revision="refs/heads/alpha-15" />
+
+    <!--<remote name="alpha-gitlab"
+            fetch="https://gitlab.com/alphadroid-project"
+            revision="refs/heads/alpha-15" />-->
+
+    <!-- device-->
+    <project path="device/oneplus/aston" name="device_oneplus_aston" remote="alpha-devices" />
+    <project path="device/oneplus/sm8550-common" name="device_oneplus_sm8550-common" remote="alpha-devices" />
+
+    <!-- kernel -->
+    <project path="kernel/oneplus/sm8550" name="kernel_oneplus_sm8550" remote="alpha-devices" />
+    <project path="kernel/oneplus/sm8550-modules" name="kernel_oneplus_sm8550-modules" remote="alpha-devices" />
+    <project path="kernel/oneplus/sm8550-devicetrees" name="kernel_oneplus_sm8550-devicetrees" remote="alpha-devices" />
+
+    <!-- vendor -->
+    <project path="vendor/oneplus/aston" name="vendor_oneplus_aston" remote="alpha-gitlab" />
+    <project path="vendor/oneplus/sm8550-common" name="vendor_oneplus_sm8550-common" remote="alpha-gitlab" />
+
+    <!-- hardware/oplus -->
+    <project path="hardware/oplus" name="aston_hardware_oplus" remote="alpha-devices" />
+
+</manifest>
