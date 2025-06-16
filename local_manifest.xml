@@ -18,13 +18,13 @@
     <!-- kernel -->
     <project path="kernel/oneplus/sm8550" name="kernel_oneplus_sm8550" remote="alpha-devices" />
     <project path="kernel/oneplus/sm8550-modules" name="kernel_oneplus_sm8550-modules" remote="alpha-devices" />
-   <project path="kernel/oneplus/sm8550-devicetrees" name="kernel_oneplus_sm8550-devicetrees" remote="alpha-devices" />
+    <project path="kernel/oneplus/sm8550-devicetrees" name="kernel_oneplus_sm8550-devicetrees" remote="alpha-devices" />
 
     <!-- vendor -->
     <project path="vendor/oneplus/aston" name="vendor_oneplus_aston" remote="alpha-gitlab" />
     <project path="vendor/oneplus/sm8550-common" name="vendor_oneplus_sm8550-common" remote="alpha-gitlab" />
 
     <!-- hardware/oplus -->
-    <project path="hardware/oplus" name="aston_hardware_oplus" remote="alpha-devices" />
+    <project path="hardware/oplus" name="hardware_oplus" remote="alpha" />
 
 </manifest>
