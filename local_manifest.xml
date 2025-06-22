@@ -27,6 +27,9 @@
     <!-- hardware/oplus -->
     <project path="hardware/oplus" name="hardware_oplus" remote="alpha" />
 
+    <remove-project name="vendor_alpha" />
+    <project path="vendor/alpha" name="vendor_alpha" remote="alpha" revision="alpha-15.2-oplus" />
+
     # ViperFX
     <project path="packages/apps/ViPER4AndroidFX" name="elpaablo/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
 
