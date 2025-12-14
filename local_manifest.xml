@@ -23,6 +23,6 @@
     <project path="hardware/oplus" name="alphadroid-project/hardware_oplus" remote="github" revision="alpha-16.1" />
 
     # ViperFX
-    <project path="packages/apps/ViPER4AndroidFX" name="elpaablo/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
+    <project path="packages/apps/ViPER4AndroidFX" name="alphadroid-devices/packages_apps_ViPER4AndroidFX" remote="github" revision="alpha-16.1" />
 
 </manifest>
