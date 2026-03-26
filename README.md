@@ -1,4 +1,4 @@
-# Build AlphaDroid for OnePlus Ace 3
+# Build AlphaDroid for OnePlus 12R
 
 ## Prerequisites
 - refer to [AOSP](https://source.android.com/docs/setup/start/requirements)
@@ -9,9 +9,9 @@
     repo init -u https://github.com/alphadroid-project/manifest.git -b alpha-16.2 --git-lfs
     ```
 
-2. Download [aston manifest](https://github.com/AlphaDroid-devices/astonc-manifest/blob/alpha-16.2/local_manifest.xml) by cloning this repo
+2. Download [aston manifest](https://github.com/AlphaDroid-devices/aston-manifest/blob/alpha-16.2/local_manifest.xml) by cloning this repo
     ```
-    git clone https://github.com/alphadroid-devices/astonc-manifest -b alpha-16.2 .repo/local_manifests
+    git clone https://github.com/alphadroid-devices/aston-manifest -b alpha-16.2 .repo/local_manifests
     ```
 
 3. Sync
