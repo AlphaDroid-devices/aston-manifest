@@ -2,6 +2,7 @@
 <manifest>
 
     <!--<remote name="github" fetch="https://github.com" />-->
+    <remote name="crdroid" fetch="https://github.com/" revision="refs/heads/16.0" />
     <remote name="gitlab" fetch="https://gitlab.com" />
 
     <!-- device-->
@@ -25,6 +26,6 @@
 
     <!-- audio -->
     <!--<project path="packages/apps/ViPER4AndroidFX" name="alphadroid-devices/packages_apps_ViPER4AndroidFX" remote="github" revision="alpha-16.2" />-->
-    <project name="crdroidandroid/android_packages_apps_DolbyAtmos" path="packages/apps/DolbyAtmos" remote="crdroid" revision="16.0" />
+    <project name="crdroidandroid/android_packages_apps_LunarisDolby" path="packages/apps/LunarisDolby" remote="crdroid" revision="16.0" />
 
 </manifest>
