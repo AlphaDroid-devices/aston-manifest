@@ -1,31 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <!--<remote name="github" fetch="https://github.com" />-->
     <remote name="crdroid" fetch="https://github.com/" revision="refs/heads/16.0" />
     <remote name="gitlab" fetch="https://gitlab.com" />
 
     <!-- device-->
-    <project path="device/oneplus/aston" name="alphadroid-devices/device_oneplus_aston" remote="github" revision="alpha-16.2" />
-    <project path="device/oneplus/sm8550-common" name="alphadroid-devices/device_oneplus_sm8550-common" remote="github" revision="alpha-16.2" />
+    <project path="device/oneplus/aston" name="device_oneplus_aston" remote="alpha-devices" revision="alpha-16.2" />
+    <project path="device/oneplus/sm8550-common" name="device_oneplus_sm8550-common" remote="alpha-devices" revision="alpha-16.2" />
+
+    <!-- framework -->
+    <remove-project name="frameworks_av" />
+    <project path="frameworks/av" name="frameworks_av" remote="alpha" revision="alpha-16.2-aston" groups="pdk,sysui-studio" />
+    <remove-project name="frameworks_base" />
+    <project path="frameworks/base" name="frameworks_base" remote="alpha" revision="alpha-16.2-aston" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+    <remove-project name="frameworks_native" />
+    <project path="frameworks/native" name="frameworks_native" remote="alpha" revision="alpha-16.2-aston" groups="pdk" />
 
     <!-- hardware -->
-    <project path="hardware/oplus" name="alphadroid-project/hardware_oplus" remote="github" revision="alpha-16.2" />
-    <project path="hardware/pixelworks/interfaces" name="LineageOS/android_hardware_pixelworks_interfaces" remote="github" revision="lineage-23.2" />
+    <project path="hardware/oplus" name="hardware_oplus" remote="alpha" revision="alpha-16.2" />
+    <project path="hardware/pixelworks/interfaces" name="hardware_pixelworks_interfaces" remote="alpha" revision="alpha-16.2" />
 
     <!-- kernel -->
-    <project path="kernel/oneplus/sm8550" name="alphadroid-devices/kernel_oneplus_sm8550" remote="github" revision="alpha-16.2-ksu" />
-    <project path="kernel/oneplus/sm8550-modules" name="alphadroid-devices/kernel_oneplus_sm8550-modules" remote="github" revision="alpha-16.2" />
-    <project path="kernel/oneplus/sm8550-devicetrees" name="alphadroid-devices/kernel_oneplus_sm8550-devicetrees" remote="github" revision="alpha-16.2" />
+    <project path="kernel/oneplus/sm8550" name="kernel_oneplus_sm8550" remote="alpha-devices" revision="alpha-16.2-ksu" />
+    <project path="kernel/oneplus/sm8550-modules" name="kernel_oneplus_sm8550-modules" remote="alpha-devices" revision="alpha-16.2" />
+    <project path="kernel/oneplus/sm8550-devicetrees" name="kernel_oneplus_sm8550-devicetrees" remote="alpha-devices" revision="alpha-16.2" />
 
     <!-- vendor -->
-    <project path="vendor/oneplus/aston" name="TheMuppets/proprietary_vendor_oneplus_aston" remote="github" revision="lineage-23.2" />
-    <project path="vendor/oneplus/sm8550-common" name="TheMuppets/proprietary_vendor_oneplus_sm8550-common" remote="github" revision="lineage-23.2" />
+    <remove-project name="vendor_alpha" />
+    <project path="vendor/alpha" name="vendor_alpha" remote="alpha" revision="alpha-16.2-aston" />
+    <project path="vendor/oneplus/aston" name="vendor_oneplus_aston" remote="alpha-gitlab" />
+    <project path="vendor/oneplus/fusion" name="vendor_oneplus_fusion" remote="alpha-gitlab" />
+    <project path="vendor/oneplus/sm8550-common" name="vendor_oneplus_sm8550-common" remote="alpha-gitlab" />
     <project path="vendor/oneplus/dolby" name="alphadroid-project/vendor_oneplus_dolby" remote="gitlab" revision="alpha-16.2" />
     <project path="vendor/oneplus/ir" name="alphadroid-project/vendor_oneplus_ir" remote="gitlab" revision="alpha-16.2" />
 
     <!-- audio -->
-    <!--<project path="packages/apps/ViPER4AndroidFX" name="alphadroid-devices/packages_apps_ViPER4AndroidFX" remote="github" revision="alpha-16.2" />-->
+    <!--<project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="alpha-devices" revision="alpha-16.2" />-->
     <project name="crdroidandroid/android_packages_apps_LunarisDolby" path="packages/apps/LunarisDolby" remote="crdroid" revision="16.0" />
 
 </manifest>
