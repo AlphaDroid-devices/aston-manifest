@@ -12,7 +12,7 @@
     <remove-project name="frameworks_av" />
     <project path="frameworks/av" name="frameworks_av" remote="alpha" revision="alpha-16.2-aston" groups="pdk,sysui-studio" />
     <remove-project name="frameworks_base" />
-    <project path="frameworks/base" name="frameworks_base" remote="alpha" revision="alpha-16.2-aston" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+    <project path="frameworks/base" name="frameworks_base" remote="alpha-gitlab" revision="alpha-16.2-aston" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
     <remove-project name="frameworks_native" />
     <project path="frameworks/native" name="frameworks_native" remote="alpha" revision="alpha-16.2-aston" groups="pdk" />
 
@@ -27,7 +27,7 @@
 
     <!-- vendor -->
     <remove-project name="vendor_alpha" />
-    <project path="vendor/alpha" name="vendor_alpha" remote="alpha" revision="alpha-16.2-aston" />
+    <project path="vendor/alpha" name="vendor_alpha" remote="alpha-gitlab" revision="alpha-16.2-aston" />
     <project path="vendor/oneplus/aston" name="vendor_oneplus_aston" remote="alpha-gitlab" />
     <project path="vendor/oneplus/fusion" name="vendor_oneplus_fusion" remote="alpha-gitlab" />
     <project path="vendor/oneplus/sm8550-common" name="vendor_oneplus_sm8550-common" remote="alpha-gitlab" />
